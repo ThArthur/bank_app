@@ -1,3 +1,4 @@
+import 'package:bank_project/views/home.dart';
 import 'package:bank_project/views/home_view.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData.dark(),
-      home: HomeView(),
+      home: Home(),
     );
   }
 }
