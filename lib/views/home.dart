@@ -24,12 +24,12 @@ class _HomeViewState extends State<Home> {
     Icons.history,
   ];
 
-  final List<Widget> _pages = const [
-    HomeView(),
-    CreditCardView(),
+  final List<Widget> _pages = [
+    const HomeView(),
+    const CreditCardView(),
     AnalyticsView(),
-    ChatView(),
-    HistoryView(),
+    const ChatView(),
+    const HistoryView(),
   ];
 
   @override

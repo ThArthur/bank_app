@@ -1,5 +1,4 @@
 import 'package:bank_project/views/home.dart';
-import 'package:bank_project/views/home_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
