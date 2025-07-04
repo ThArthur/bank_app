@@ -1,12 +1,15 @@
 import 'dart:math';
 import 'dart:ui';
 
+import 'package:bank_project/models/TransactionDay.dart';
+
 class AnalyticModel {
   final double cardBalance;
   final int lastFourNumbers;
   final double totalSpendThisWeek;
   final Color color;
   final List<double> weeklySpending;
+  final List<TransactionDay> transactions;
 
   AnalyticModel({
     required this.cardBalance,
@@ -14,6 +17,7 @@ class AnalyticModel {
     required this.totalSpendThisWeek,
     required this.color,
     required this.weeklySpending,
+    required this.transactions,
   });
 
   static final List<Color> _colors = [
@@ -33,6 +37,7 @@ class AnalyticModel {
       totalSpendThisWeek: [224.53, 4777.21, 2234.53][index],
       color: _colors[random.nextInt(_colors.length)],
       weeklySpending: List.generate(7, (_) => random.nextDouble() * 100),
+      transactions: fakeGroupedTransactions,
     );
   });
 }
